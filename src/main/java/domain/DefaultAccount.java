@@ -1,6 +1,6 @@
 package domain;
 
-public interface DeafultAccount{
+public interface DefaultAccount {
 
     void setId();
 
@@ -8,13 +8,10 @@ public interface DeafultAccount{
 
     void setPassword();
 
-    void setFio();
-
     long getId();
 
     String getLogin();
 
     String getPassword();
 
-    String getFio();
 }

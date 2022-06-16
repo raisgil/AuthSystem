@@ -1,8 +1,15 @@
 package impl;
 
-import domain.DeafultAccount;
+import domain.DefaultAccount;
 
-public class DeafultAccountImpl implements DeafultAccount {
+public class DefaultAccountImpl implements DefaultAccount {
+
+    private String login;
+    private String password;
+    private String firstname;
+    private String middlename;
+    private String lastname;
+
     @Override
     public void setId() {
 
@@ -18,8 +25,19 @@ public class DeafultAccountImpl implements DeafultAccount {
 
     }
 
-    @Override
-    public void setFio() {
+
+    public void setFirstName(String firstname) {
+        this.firstname = firstname;
+
+    }
+
+    public void setMiddleName(String middlename) {
+        this.middlename = middlename;
+
+    }
+
+    public void setLastName(String lastName) {
+        this.lastname = lastName;
 
     }
 
@@ -38,8 +56,20 @@ public class DeafultAccountImpl implements DeafultAccount {
         return null;
     }
 
-    @Override
-    public String getFio() {
+    String getMyLogin() {
+        return this.login;
+    }
+
+    String getMyPassword() {
+        return this.password;
+    }
+
+    DefaultAccount defaultUserMenu() {
+        System.out.println("Приветствую вас");
+        System.out.print("Выберите действие: \n" +
+                "1. Указать Имя\n" +
+                "2. Указать Фамилию\n" +
+                "3. Указать Отчество");
         return null;
     }
 }

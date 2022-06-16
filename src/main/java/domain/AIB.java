@@ -1,2 +1,4 @@
-package domain;public interface AIB {
+package domain;
+
+public interface AIB {
 }

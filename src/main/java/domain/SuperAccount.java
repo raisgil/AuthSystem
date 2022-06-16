@@ -1,9 +1,20 @@
 package domain;
 
-public interface Account {
+public interface SuperAccount {
 
-    void setId();
+    Admin createAdmin();
+
+    AIB createAib();
+
+    void setRole();
+
     void setLogin();
+
     void setPassword();
+
+    void deleteAccount();
+
+    void showAccounts();
+
 
 }
